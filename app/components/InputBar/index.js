@@ -60,7 +60,7 @@ const InputBar = () => {
     if (Platform.OS === 'android') {
       try {
         const granted = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+          PermissionsAndroid.PERMISSIONS.RECORD_AUDIO,
           {
             title: 'Enable Microphone?',
             message:
